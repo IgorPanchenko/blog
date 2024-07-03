@@ -20,3 +20,7 @@ class CommentForm(forms.ModelForm):
         self.fields['name'].label = 'Имя'
         self.fields['email'].label = 'Почта'
         self.fields['body'].label = 'Коментарий'
+
+
+class SearchForm(forms.Form):
+    query = forms.CharField()
